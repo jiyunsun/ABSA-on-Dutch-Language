@@ -1,0 +1,29 @@
+cuda memory allocated: 14554624
+> n_trainable_params: 2525703, n_nontrainable_params: 1112100
+> training arguments:
+>>> model_name: atae_lstm
+>>> dataset: dutch
+>>> optimizer: <class 'torch.optim.adam.Adam'>
+>>> initializer: <function xavier_uniform_ at 0x7fe9a6920830>
+>>> lr: 2e-05
+>>> dropout: 0.1
+>>> l2reg: 0.01
+>>> num_epoch: 20
+>>> batch_size: 16
+>>> log_step: 10
+>>> embed_dim: 300
+>>> hidden_dim: 300
+>>> bert_dim: 768
+>>> pretrained_bert_name: GroNLP/bert-base-dutch-cased
+>>> max_seq_len: 85
+>>> polarities_dim: 3
+>>> hops: 3
+>>> patience: 5
+>>> seed: 1234
+>>> valset_ratio: 0
+>>> model_class: <class 'models.atae_lstm.ATAE_LSTM'>
+>>> dataset_file: {'train': './datasets/dutch_data_train.xlsx.seg', 'test': './datasets/dutch_data_test.xlsx.seg'}
+>>> inputs_cols: ['text_indices', 'aspect_indices']
+>>> device: cuda
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0

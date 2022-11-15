@@ -1,0 +1,314 @@
+cuda memory allocated: 14554624
+> n_trainable_params: 2525703, n_nontrainable_params: 1112100
+> training arguments:
+>>> model_name: atae_lstm
+>>> dataset: dutch
+>>> optimizer: <class 'torch.optim.adam.Adam'>
+>>> initializer: <function xavier_uniform_ at 0x7f65ba3b8830>
+>>> lr: 2e-05
+>>> dropout: 0.1
+>>> l2reg: 0.01
+>>> num_epoch: 20
+>>> batch_size: 16
+>>> log_step: 10
+>>> embed_dim: 300
+>>> hidden_dim: 300
+>>> bert_dim: 768
+>>> pretrained_bert_name: GroNLP/bert-base-dutch-cased
+>>> max_seq_len: 85
+>>> polarities_dim: 3
+>>> hops: 3
+>>> patience: 5
+>>> seed: 1234
+>>> valset_ratio: 0
+>>> model_class: <class 'models.atae_lstm.ATAE_LSTM'>
+>>> dataset_file: {'train': './datasets/dutch_data_train.xlsx.seg', 'test': './datasets/dutch_data_test.xlsx.seg'}
+>>> inputs_cols: ['text_indices', 'aspect_indices']
+>>> device: cuda
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+loss: 1.1705, acc: 0.1625
+loss: 1.1736, acc: 0.1562
+loss: 1.1808, acc: 0.1333
+loss: 1.1774, acc: 0.1359
+loss: 1.1766, acc: 0.1375
+loss: 1.1748, acc: 0.1385
+loss: 1.1705, acc: 0.1420
+loss: 1.1654, acc: 0.1523
+loss: 1.1637, acc: 0.1542
+loss: 1.1621, acc: 0.1537
+> val_acc: 0.1603, val_recall: 0.2189, val_f1: 0.1039
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.1603
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 1
+loss: 1.1145, acc: 0.1750
+loss: 1.1199, acc: 0.1958
+loss: 1.1242, acc: 0.1925
+loss: 1.1229, acc: 0.2036
+loss: 1.1225, acc: 0.2056
+loss: 1.1268, acc: 0.2000
+loss: 1.1270, acc: 0.2048
+loss: 1.1258, acc: 0.2067
+loss: 1.1234, acc: 0.2162
+loss: 1.1183, acc: 0.2276
+loss: 1.1155, acc: 0.2373
+> val_acc: 0.5717, val_recall: 0.2561, val_f1: 0.2543
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.5717
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 2
+loss: 1.0782, acc: 0.3750
+loss: 1.0770, acc: 0.3875
+loss: 1.0601, acc: 0.4271
+loss: 1.0497, acc: 0.4578
+loss: 1.0510, acc: 0.4637
+loss: 1.0346, acc: 0.4823
+loss: 1.0298, acc: 0.4902
+loss: 1.0197, acc: 0.5039
+loss: 1.0151, acc: 0.5111
+loss: 1.0267, acc: 0.5044
+> val_acc: 0.7780, val_recall: 0.3105, val_f1: 0.3019
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.778
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 3
+loss: 1.0639, acc: 0.5375
+loss: 0.9836, acc: 0.5792
+loss: 0.9763, acc: 0.5725
+loss: 0.9902, acc: 0.5607
+loss: 1.0016, acc: 0.5444
+loss: 0.9966, acc: 0.5477
+loss: 0.9884, acc: 0.5548
+loss: 0.9906, acc: 0.5575
+loss: 0.9898, acc: 0.5588
+loss: 0.9891, acc: 0.5572
+loss: 0.9876, acc: 0.5629
+> val_acc: 0.7971, val_recall: 0.3177, val_f1: 0.3073
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.7971
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 4
+loss: 0.9634, acc: 0.6062
+loss: 0.9482, acc: 0.6062
+loss: 0.9672, acc: 0.5896
+loss: 0.9770, acc: 0.5813
+loss: 0.9730, acc: 0.5850
+loss: 0.9787, acc: 0.5792
+loss: 0.9822, acc: 0.5759
+loss: 0.9805, acc: 0.5805
+loss: 0.9760, acc: 0.5840
+loss: 0.9804, acc: 0.5794
+> val_acc: 0.8139, val_recall: 0.3241, val_f1: 0.3122
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.8139
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 5
+loss: 0.9954, acc: 0.5875
+loss: 1.0059, acc: 0.5625
+loss: 0.9943, acc: 0.5700
+loss: 0.9868, acc: 0.5750
+loss: 0.9847, acc: 0.5847
+loss: 0.9889, acc: 0.5795
+loss: 0.9833, acc: 0.5837
+loss: 0.9778, acc: 0.5892
+loss: 0.9752, acc: 0.5926
+loss: 0.9736, acc: 0.5974
+loss: 0.9717, acc: 0.5969
+> val_acc: 0.8262, val_recall: 0.3288, val_f1: 0.3161
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.8262
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 6
+loss: 0.9611, acc: 0.6062
+loss: 0.9598, acc: 0.6062
+loss: 0.9923, acc: 0.5813
+loss: 0.9958, acc: 0.5734
+loss: 0.9825, acc: 0.5800
+loss: 0.9741, acc: 0.5875
+loss: 0.9641, acc: 0.5973
+loss: 0.9690, acc: 0.5984
+loss: 0.9691, acc: 0.5979
+loss: 0.9688, acc: 0.5994
+> val_acc: 0.8430, val_recall: 0.3351, val_f1: 0.3221
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.843
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 7
+loss: 0.8741, acc: 0.6750
+loss: 0.9158, acc: 0.6542
+loss: 0.9449, acc: 0.6325
+loss: 0.9335, acc: 0.6375
+loss: 0.9334, acc: 0.6333
+loss: 0.9533, acc: 0.6193
+loss: 0.9553, acc: 0.6183
+loss: 0.9561, acc: 0.6158
+loss: 0.9619, acc: 0.6081
+loss: 0.9636, acc: 0.6079
+loss: 0.9633, acc: 0.6076
+> val_acc: 0.8498, val_recall: 0.3377, val_f1: 0.3248
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.8498
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 8
+loss: 0.9725, acc: 0.5875
+loss: 0.9619, acc: 0.6125
+loss: 0.9634, acc: 0.6167
+loss: 0.9719, acc: 0.6047
+loss: 0.9666, acc: 0.6075
+loss: 0.9542, acc: 0.6146
+loss: 0.9632, acc: 0.6080
+loss: 0.9563, acc: 0.6125
+loss: 0.9643, acc: 0.6076
+loss: 0.9589, acc: 0.6112
+> val_acc: 0.8565, val_recall: 0.3402, val_f1: 0.3277
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.8565
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 9
+loss: 0.9412, acc: 0.6625
+loss: 0.9552, acc: 0.6292
+loss: 0.9458, acc: 0.6350
+loss: 0.9389, acc: 0.6482
+loss: 0.9535, acc: 0.6306
+loss: 0.9528, acc: 0.6261
+loss: 0.9581, acc: 0.6240
+loss: 0.9507, acc: 0.6267
+loss: 0.9501, acc: 0.6272
+loss: 0.9518, acc: 0.6257
+loss: 0.9554, acc: 0.6219
+> val_acc: 0.8576, val_recall: 0.3407, val_f1: 0.3282
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.8576
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 10
+loss: 1.0396, acc: 0.5312
+loss: 0.9872, acc: 0.5750
+loss: 0.9968, acc: 0.5667
+loss: 0.9817, acc: 0.5828
+loss: 0.9684, acc: 0.5988
+loss: 0.9696, acc: 0.6000
+loss: 0.9728, acc: 0.5973
+loss: 0.9586, acc: 0.6102
+loss: 0.9641, acc: 0.6076
+loss: 0.9582, acc: 0.6138
+> val_acc: 0.8655, val_recall: 0.3436, val_f1: 0.3320
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.8655
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 11
+loss: 0.9482, acc: 0.6125
+loss: 0.9687, acc: 0.5958
+loss: 0.9555, acc: 0.6175
+loss: 0.9536, acc: 0.6214
+loss: 0.9418, acc: 0.6361
+loss: 0.9321, acc: 0.6409
+loss: 0.9386, acc: 0.6385
+loss: 0.9478, acc: 0.6292
+loss: 0.9430, acc: 0.6331
+loss: 0.9381, acc: 0.6362
+loss: 0.9481, acc: 0.6291
+> val_acc: 0.8688, val_recall: 0.3449, val_f1: 0.3338
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.8688
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 12
+loss: 0.9014, acc: 0.6625
+loss: 0.9541, acc: 0.6250
+loss: 0.9499, acc: 0.6229
+loss: 0.9488, acc: 0.6234
+loss: 0.9473, acc: 0.6250
+loss: 0.9498, acc: 0.6240
+loss: 0.9440, acc: 0.6277
+loss: 0.9420, acc: 0.6289
+loss: 0.9356, acc: 0.6347
+loss: 0.9394, acc: 0.6331
+> val_acc: 0.8711, val_recall: 0.3458, val_f1: 0.3351
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.8711
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 13
+loss: 0.9988, acc: 0.5750
+loss: 0.9759, acc: 0.5958
+loss: 0.9750, acc: 0.5975
+loss: 0.9650, acc: 0.6089
+loss: 0.9700, acc: 0.6000
+loss: 0.9546, acc: 0.6125
+loss: 0.9538, acc: 0.6115
+loss: 0.9450, acc: 0.6225
+loss: 0.9481, acc: 0.6228
+loss: 0.9467, acc: 0.6263
+loss: 0.9394, acc: 0.6309
+> val_acc: 0.8733, val_recall: 0.3466, val_f1: 0.3365
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.8733
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 14
+loss: 0.9455, acc: 0.6188
+loss: 0.9335, acc: 0.6219
+loss: 0.9385, acc: 0.6250
+loss: 0.9404, acc: 0.6281
+loss: 0.9431, acc: 0.6212
+loss: 0.9387, acc: 0.6260
+loss: 0.9356, acc: 0.6268
+loss: 0.9406, acc: 0.6211
+loss: 0.9387, acc: 0.6264
+loss: 0.9387, acc: 0.6288
+> val_acc: 0.8733, val_recall: 0.3466, val_f1: 0.3365
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 15
+loss: 0.8799, acc: 0.6500
+loss: 0.9224, acc: 0.6333
+loss: 0.9159, acc: 0.6450
+loss: 0.9207, acc: 0.6482
+loss: 0.9124, acc: 0.6514
+loss: 0.9205, acc: 0.6432
+loss: 0.9228, acc: 0.6413
+loss: 0.9322, acc: 0.6325
+loss: 0.9280, acc: 0.6360
+loss: 0.9284, acc: 0.6342
+loss: 0.9287, acc: 0.6315
+> val_acc: 0.8767, val_recall: 0.3479, val_f1: 0.3386
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.8767
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 16
+loss: 0.9279, acc: 0.6312
+loss: 0.9343, acc: 0.6188
+loss: 0.9282, acc: 0.6229
+loss: 0.9263, acc: 0.6266
+loss: 0.9331, acc: 0.6225
+loss: 0.9347, acc: 0.6208
+loss: 0.9316, acc: 0.6250
+loss: 0.9271, acc: 0.6305
+loss: 0.9283, acc: 0.6285
+loss: 0.9211, acc: 0.6344
+> val_acc: 0.8789, val_recall: 0.3487, val_f1: 0.3401
+>> saved: state_dict/atae_lstm_dutch_val_acc_0.8789
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 17
+loss: 0.9182, acc: 0.6250
+loss: 0.9202, acc: 0.6292
+loss: 0.9006, acc: 0.6400
+loss: 0.9223, acc: 0.6250
+loss: 0.9163, acc: 0.6264
+loss: 0.9198, acc: 0.6239
+loss: 0.9232, acc: 0.6240
+loss: 0.9168, acc: 0.6292
+loss: 0.9210, acc: 0.6221
+loss: 0.9139, acc: 0.6296
+loss: 0.9117, acc: 0.6321
+> val_acc: 0.8789, val_recall: 0.3487, val_f1: 0.3405
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 18
+loss: 0.8807, acc: 0.6562
+loss: 0.8804, acc: 0.6531
+loss: 0.8854, acc: 0.6542
+loss: 0.8855, acc: 0.6484
+loss: 0.8791, acc: 0.6525
+loss: 0.8946, acc: 0.6375
+loss: 0.8982, acc: 0.6348
+loss: 0.9004, acc: 0.6359
+loss: 0.9077, acc: 0.6278
+loss: 0.9027, acc: 0.6319
+> val_acc: 0.8778, val_recall: 0.3404, val_f1: 0.3265
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 19
+loss: 0.8793, acc: 0.6375
+loss: 0.8643, acc: 0.6625
+loss: 0.8898, acc: 0.6475
+loss: 0.8815, acc: 0.6482
+loss: 0.8867, acc: 0.6458
+loss: 0.8860, acc: 0.6409
+loss: 0.8865, acc: 0.6365
+loss: 0.8854, acc: 0.6400
+loss: 0.8887, acc: 0.6375
+loss: 0.8899, acc: 0.6368
+loss: 0.8908, acc: 0.6339
+> val_acc: 0.8733, val_recall: 0.3432, val_f1: 0.3352
+>> test_acc: 0.8789, test_recall: 0.3487, test_f1: 0.3401

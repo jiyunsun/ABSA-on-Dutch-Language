@@ -1,0 +1,39 @@
+cuda memory allocated: 468439552
+> n_trainable_params: 116763651, n_nontrainable_params: 0
+> training arguments:
+>>> model_name: bert_spc
+>>> dataset: dutch
+>>> optimizer: <class 'torch.optim.adam.Adam'>
+>>> initializer: <function xavier_uniform_ at 0x7f0584e92a70>
+>>> lr: 2e-05
+>>> dropout: 0.1
+>>> l2reg: 0.01
+>>> num_epoch: 20
+>>> batch_size: 16
+>>> log_step: 10
+>>> embed_dim: 300
+>>> hidden_dim: 300
+>>> bert_dim: 768
+>>> pretrained_bert_name: GroNLP/gpt2-small-dutch
+>>> max_seq_len: 85
+>>> polarities_dim: 3
+>>> hops: 3
+>>> patience: 5
+>>> seed: 1234
+>>> valset_ratio: 0
+>>> model_class: <class 'models.bert_spc.BERT_SPC'>
+>>> dataset_file: {'train': './datasets/dutch_data_train.xlsx.seg', 'test': './datasets/dutch_data_test.xlsx.seg'}
+>>> inputs_cols: ['concat_bert_indices', 'concat_segments_indices']
+>>> device: cuda
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+loss: 1.3392, acc: 0.4875
+loss: 1.1804, acc: 0.5500
+loss: 1.0549, acc: 0.6083
+loss: 1.0321, acc: 0.6109
+loss: 1.0177, acc: 0.6075
+loss: 1.0144, acc: 0.6062
+loss: 1.0074, acc: 0.6071
+loss: 1.0011, acc: 0.6117
+loss: 1.0039, acc: 0.6062
+loss: 1.0019, acc: 0.6012

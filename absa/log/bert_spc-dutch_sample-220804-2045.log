@@ -1,0 +1,29 @@
+> n_trainable_params: 109139715, n_nontrainable_params: 0
+> training arguments:
+>>> model_name: bert_spc
+>>> dataset: dutch_sample
+>>> optimizer: <class 'torch.optim.adam.Adam'>
+>>> initializer: <function xavier_uniform_ at 0x7fe12ea88940>
+>>> lr: 2e-05
+>>> dropout: 0.1
+>>> l2reg: 0.01
+>>> num_epoch: 1
+>>> batch_size: 16
+>>> log_step: 10
+>>> embed_dim: 300
+>>> hidden_dim: 300
+>>> bert_dim: 768
+>>> pretrained_bert_name: GroNLP/bert-base-dutch-cased
+>>> max_seq_len: 85
+>>> polarities_dim: 3
+>>> hops: 3
+>>> patience: 5
+>>> seed: 1234
+>>> valset_ratio: 0
+>>> model_class: <class 'models.bert_spc.BERT_SPC'>
+>>> dataset_file: {'train': './datasets/dutch_sample_train.xlsx.seg', 'test': './datasets/dutch_sample_test.xlsx.seg'}
+>>> inputs_cols: ['concat_bert_indices', 'concat_segments_indices']
+>>> device: cpu
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+loss: 0.9981, acc: 0.5223
